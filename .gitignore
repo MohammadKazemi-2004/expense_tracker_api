@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+
+# Django
+*.sqlite3
+/media/
+*.log
+
+# Environment
+.env
+venv/
+.env/
+*.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+*.pid
+*.tar
+*.log
+*.db
+
+# Docker
+.dockerignore
