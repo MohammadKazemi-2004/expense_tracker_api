@@ -14,8 +14,10 @@ class ApiViewsets(viewsets.ModelViewSet):
     filterset_class = FilterPubDate
     
     def get_queryset(self):
-        return Expense.objects.filter(owner = self.request.user)
-    
+        user = self.request.user
+        if user.is_authenticated:
+            return Expense.objects.filter(owner = user)
+        return Expense.objects.none()
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
     
