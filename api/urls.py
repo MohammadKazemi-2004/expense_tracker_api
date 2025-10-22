@@ -10,9 +10,9 @@ urlpatterns = [
 ]
 
 
-# <host>/api/etudiants/ POST
-# <host>/api/etudiants/<Etudiant id>/ DELETE
-# <host>/api/etudiants/<Etudiant id>/ PUT
-# <host>/api/etudiants/<Etudiant id>/ PATCH
-# <host>/api/etudiants/<Etudiant id>/ GET
-# <host>/api/etudiants/ GET (List endpoint)
+# <host>/api/expense/                =>  POST
+# <host>/api/expense/<expense id>/  =>  DELETE
+# <host>/api/expense/<expense id>/  =>  PUT
+# <host>/api/expense/<expense id>/  =>  PATCH
+# <host>/api/expense/<expense id>/  =>  GET
+# <host>/api/expense/                =>  GET (List endpoint)
