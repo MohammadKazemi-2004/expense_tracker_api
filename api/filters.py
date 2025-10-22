@@ -27,7 +27,7 @@ class FilterPubDate(django_filters.FilterSet):
     
     class Meta:
         model = Expense
-        fields = [] # ??
+        fields = [] # 
     
     def filter_by_period(self, queryset, name, value):
         now = timezone.now()
